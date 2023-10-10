@@ -8,6 +8,16 @@ const products = [
 
 function getMostExpensiveProduct(products) {
   // Start coding here
+let mostExpensiveProduct;
+let mostExpensivePrice = 0;
+for( let i = 0; i < products.length ; i++)
+{ if ( products[i].price > mostExpensivePrice)
+{ mostExpensivePrice = products[i].price ;
+mostExpensiveProduct = products[i].name;}
+}
+return "name: " + mostExpensiveProduct + " , price: " + mostExpensivePrice
 }
 
-getMostExpensiveProduct(products); // Output: { name: "Laptop", price: 1000 }
+console.log(getMostExpensiveProduct(products)); // Output: { name: "Laptop", price: 1000 }
+
+
