@@ -7,7 +7,15 @@ const products = [
 ];
 
 function getMostExpensiveProduct(products) {
-  // Start coding here
+  let expensive = 0;
+  let name1;
+  for (let i = 0; i < products.length; i++) {
+    if (products[i].price > expensive) {
+      expensive = products[i].price;
+      name1 = products[i].name;
+    }
+  }
+  return ("Name: " + name1 + ", Price: " + expensive)
 }
 
-getMostExpensiveProduct(products); // Output: { name: "Laptop", price: 1000 }
+console.log(getMostExpensiveProduct(products));

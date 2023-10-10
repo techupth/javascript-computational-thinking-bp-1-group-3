@@ -2,7 +2,11 @@ let numbers = [10, 20, 30];
 let anotherNumbers = [2, 4, 6];
 
 function addNumber(numbers, amount) {
-  // Start coding here
+  let amount;
+  for (let amount in numbers) {
+    amount = numbers[i] + amount;
+  }
+  return numbers;
 }
 
 addNumber(numbers, 10); // Output: [20, 30, 40]

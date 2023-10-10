@@ -1,6 +1,4 @@
-function countVowels(words) {
-  // Start coding here
-}
+const countVowels = Str => Array.from(str).filter(letter => "aeiou".includes(letter)).length;
 
-countVowels("Hello World"); // Output: 3
-countVowels("TechUp"); // Output: 2
+console.log(countVowels("Hello World"));
+console.log(countVowels("TechUp"));

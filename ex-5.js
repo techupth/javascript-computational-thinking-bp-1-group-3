@@ -1,6 +1,13 @@
 function getLetterFrequency(words) {
-  // Start coding here
-}
+  let count = {};
+  words.split('').forEach(function(s) {
+   count[s] = count[s] ? count[s]+1 : 1;
+  });
+  return count;
+ }
+ console.log(getLetterFrequency("Techupth"))
+ 
+  
 
 const str = "Techupth";
 
